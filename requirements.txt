@@ -1,0 +1,16 @@
+numpy
+scipy
+scikit-learn
+tqdm
+geopandas
+shapely
+requests
+mgrs
+openeo
+rasterio
+openpyxl
+supabase
+pandas
+papermill
+ipykernel
+jupyter-client

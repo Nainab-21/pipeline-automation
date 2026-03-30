@@ -1,0 +1,13 @@
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rs-pipeline:latest
+    env_file:
+      - .env
+    volumes:
+      # Mount a local workspace so you can inspect outputs without re-downloading from S3
+      - ./local-workspace:/workspace
+    # Prevent the container from keeping the terminal if you run detached
+    tty: false
